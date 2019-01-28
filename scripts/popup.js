@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var res_variations, res_details;
       xhr_variations.onreadystatechange = function () {
         if (xhr_variations.readyState === 4 && xhr_variations.status === 200) {
+          console.log("variations=" + xhr_variations.responseText);
           res_variations = JSON.parse(xhr_variations.responseText);
 
           //Get product details
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       xhr_details.onreadystatechange = function () {
         if (xhr_details.readyState === 4 && xhr_details.status === 200) {
+          console.log("details=" + xhr_details.responseText);
           res_details = JSON.parse(xhr_details.responseText);
 
           // res_variations.variations.forEach(function(item_variation) {
