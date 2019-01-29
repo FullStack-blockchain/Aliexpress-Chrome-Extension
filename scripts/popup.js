@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       //Request Param
       var data = JSON.stringify({"productId": productId, "currency": "AUD", "locale": "en_US"});
       //Aliseeks API Key
-      var API_KEY = 'FJBQCTRBWFCYPDLZ';
+      var API_KEY = 'XXXXXXXXXXX';
       //Product details & variations END_POINT
       var url_details = "https://api.aliseeks.com/v1/products/details";
       var url_variations = "https://api.aliseeks.com/v1/products/variations";
